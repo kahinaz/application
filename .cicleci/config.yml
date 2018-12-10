@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Java Maven CircleCI 2.0 configuration file
 
 # Check https://circleci.com/docs/2.0/language-java/ for more details
@@ -63,3 +64,13 @@ jobs:
             - run:
                   name: Build Docker Image
                   command: ./gradlew bootRepackage -Pprod pushDockerLatest pushDockerVersionTag -x test
+=======
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.4.1
+    steps:
+      - checkout
+      - run: echo "A first hello"
+>>>>>>> 94687bc12d8571affde68c5d2bcf07d5f2031ccd
